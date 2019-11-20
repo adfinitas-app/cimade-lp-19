@@ -1,0 +1,61 @@
+/******BASICS******/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.no_padding {
+    padding: 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.normalcase {
+    text-transform: initial;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+/******LIST_POLICES******/
+
+/******LIST_COLOURS******/
+
+.noir_pur {
+    color: #000000;
+}
+
+.noir_pur_bg {
+    background-color: #000000;
+}
+
+.blanc_pur {
+    color: #ffffff;
+}
+
+.blanc_pur_bg {
+    background-color: #ffffff;
+}
