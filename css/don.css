@@ -1,0 +1,76 @@
+.donBox {
+    border: 3px solid #EAEAEA;
+    border-radius: 90px;
+    height: 140px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 900px;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+}
+
+.donBox:hover {
+    transform: scale(1.05);    
+}
+
+.donButtonDon {
+    height: 40px;
+    text-align: center;
+    border-radius: 90px;
+    line-height: 40px;
+    width: 180px;
+    margin-right: 20px;
+}
+
+.donText {
+    text-align: left;
+}
+
+.donNumberDiv {
+    justify-content: left;
+    padding-left: 50px;
+}
+
+#donLinkDefisc {
+    color: black;
+    text-decoration: underline;
+}
+
+#donLinkDefisc:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+#donBottonLeft {
+    justify-content: right;
+}
+
+#donBottonRight {
+    justify-content: left;
+}
+
+@media screen and (max-width: 768px) {
+    .donBox {
+        height: auto;
+        padding: 20px;
+        border-radius: 90px
+    }
+    .donText {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .donNumberDiv {
+        justify-content: center;
+        padding-left: 0px;
+    }
+    .donButtonDon {
+        margin-right: 0px;
+    }
+    #donBottonLeft, #donBottonRight {
+        justify-content: center;
+    }
+    .hidePhone {
+        display: none;
+    }
+}
