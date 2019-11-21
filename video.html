@@ -11,7 +11,9 @@
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <!--FONTS-->
-    <link href="Link Google Fonts" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700|Montserrat|Open+Sans:300,400,600,700,800&display=swap"
+        rel="stylesheet">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/basics.css">
     <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -33,7 +35,15 @@
 </head>
 
 <body>
-
+    <div class="container-fluid" style="height: 100%; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;" id="video_div">
+        <video width="100%" height="auto" id="video" poster="assets/posterVideo.png" style="display: block;">
+            <source src="assets/videoCDLE.mp4" type="video/mp4" />
+        </video>
+        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100px; width: 100px; margin: auto; border-radius: 50px; cursor: pointer;" id="play_button_video">
+            <img src="assets/play.png" height="100%"
+                style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+        </div>
+    </div>
 </body>
 
 <!--JQUERY-->

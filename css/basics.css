@@ -20,7 +20,6 @@ a:focus {
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 body {
@@ -75,6 +74,10 @@ body {
     font-size: 12px;
 }
 
+.font-size-15 {
+    font-size: 15px;
+}
+
 .font-size-16 {
     font-size: 16px;
 }
@@ -113,6 +116,14 @@ body {
 
 .font-size-60 {
     font-size: 60px;
+}
+
+.font-size-70 {
+    font-size: 70px;
+}
+
+.font-size-76 {
+    font-size: 76px;
 }
 
 /******LIST_POLICES******/
