@@ -26,6 +26,22 @@ body {
     margin: 0px;
 }
 
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
+@media (max-width: 767px) {
+    .row-eq-height {
+        display: initial;
+        display: initial;
+        display: initial;
+        display: initial;
+    }
+}
+
 .uppercase {
     text-transform: uppercase;
 }
@@ -58,10 +74,20 @@ body {
     padding: 0!important;
 }
 
-.vertical-align {
+.center-middle {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.vertical-align-innerCol {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vertical-align-col {
+    display: table;
+    overflow: hidden;
 }
 
 .height-100 {
@@ -204,4 +230,12 @@ body {
 
 .blanc_pur_bg {
     background-color: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        display: -webkit-flex;
+        flex-wrap: wrap;
+    }
 }
