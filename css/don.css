@@ -1,7 +1,7 @@
 .donBox {
     border: 3px solid #EAEAEA;
     border-radius: 90px;
-    height: 140px;
+    height: 160px;
     text-align: center;
     margin: auto;
     margin-bottom: 20px;
@@ -50,15 +50,19 @@
     justify-content: left;
 }
 
+.containerDon {
+    margin-top: 60px;
+}
+
 @media screen and (max-width: 768px) {
     .donBox {
         height: auto;
-        padding: 20px;
-        border-radius: 90px
+        padding: 40px;
+        border-radius: 90px;
     }
     .donText {
-        text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        margin-left: 0px!important;
     }
     .donNumberDiv {
         justify-content: center;
@@ -72,5 +76,29 @@
     }
     .hidePhone {
         display: none;
+    }
+    .font-size-40-mobile {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .font-size-20-mobile {
+        font-size: 22.5px;
+        line-height: 25px!important;
+    }
+    #asteriskbottonDonMobile {
+        height: 150px;
+        position: relative;
+        bottom: 20px;
+        margin-top: 20px;
+    }
+    .containerDon {
+        margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    #logoConfianceDon {
+        left: 100px!important;
+        bottom: 220px!important;
     }
 }
