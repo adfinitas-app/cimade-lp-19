@@ -195,6 +195,10 @@ body {
     background-color: #FFF95A;
 }
 
+.rouge_purHover:hover {
+    color: #EE3124;
+}
+
 .grisLight_pur {
     color: #EAEAEA;
 }

@@ -8,6 +8,7 @@
     max-width: 900px;
     transition: all .2s ease-in-out;
     cursor: pointer;
+    color: black;
 }
 
 .donBox:hover {

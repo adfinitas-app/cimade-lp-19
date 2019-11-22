@@ -45,15 +45,18 @@ $("#arrowLeftPopUpDescription").click(function () {
 });
 
 $(".redCircleDescription").click(function () {
+    if ($("#DescriptionPopUp").css("display") == "none") {
+        $("body").css("overflow-y", "hidden");
+        $("html").css("overflow-y", "hidden");
+    } else {
+        $("body").css("overflow-y", "scroll");
+        $("html").css("overflow-y", "scroll");
+    }
     $("#DescriptionPopUp").css("display", "block");
-    $("body").css("overflow-y", "hidden");
-    $("html").css("overflow-y", "hidden");
     if ($("#DescriptionPopUp").css("opacity") == 1) {
         $("#DescriptionPopUp").animate({
             opacity: 0
         }, 1000, function () {
-            $("body").css("overflow-y", "visible");
-            $("html").css("overflow-y", "visible");
             $("#DescriptionPopUp").css("display", "none");
         });
     } else {
