@@ -1,0 +1,47 @@
+#textHeaderMid {
+    padding-right: 20px;
+}
+
+#textHeaderRight {
+    border: #EAEAEA solid 2px;
+    border-radius: 20px;
+    padding: 42px 50px;
+    max-width: 400px
+}
+
+@media (max-width: 992px) {
+    #textHeaderLeft {
+        margin: 15px auto;
+        max-width: 320px;
+    }
+
+    #textHeaderMid {
+        max-width: 320px;
+        margin: 15px auto;
+        padding-right: 0;
+    }
+
+    #textHeaderRight {
+        border: #EAEAEA solid 2px;
+        border-radius: 20px;
+        padding: 42px 30px;
+        margin: 15px auto;
+        max-width: 320px
+    }
+}
+
+@media (max-width: 916px) {
+    .hideMobile {
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    #logoHeader {
+        width: 90%
+    }
+
+
+}
