@@ -66,7 +66,17 @@ $(".redCircleDescription").click(function () {
     }
 });
 
-$("#displayPopUptemoin1").click(function () {
+$(".temoins").click(function () {
+    $("body").css("overflow-y", "hidden");
+    $("html").css("overflow-y", "hidden");
+    $("#DescriptionPopUp").css("display", "block");
+    $("#DescriptionPopUp").animate({
+        opacity: 1
+    }, 1000);
+});
+
+
+$("#temoin1").click(function () {
     $("#arrowRightPopUpDescription").css("display", "block");
     $("#arrowLeftPopUpDescription").css("display", "none");
     temoin1PopUpLeft = 0;
@@ -77,7 +87,7 @@ $("#displayPopUptemoin1").click(function () {
     document.getElementById('temoin3PopUpDescription').style.left = temoin3PopUpLeft + "%";
 });
 
-$("#displayPopUptemoin2").click(function () {
+$("#temoin2").click(function () {
     $("#arrowRightPopUpDescription").css("display", "block");
     $("#arrowLeftPopUpDescription").css("display", "block");
     temoin1PopUpLeft = -100;
@@ -88,7 +98,7 @@ $("#displayPopUptemoin2").click(function () {
     document.getElementById('temoin3PopUpDescription').style.left = temoin3PopUpLeft + "%";
 });
 
-$("#displayPopUptemoin3").click(function () {
+$("#temoin3").click(function () {
     $("#arrowRightPopUpDescription").css("display", "none");
     $("#arrowLeftPopUpDescription").css("display", "block");
     temoin1PopUpLeft = -200;

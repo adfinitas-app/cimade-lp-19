@@ -7,13 +7,13 @@ var links = document.getElementsByClassName("utmHref");
 if (url.searchParams.get("utm_campaign")) {
     utmParams += "&utm_campaign=" + url.searchParams.get("utm_campaign");
 } else {
-    utmParams += "&utm_campaign=LP";
+    utmParams += "&utm_campaign=FA19";
 }
 
 if (url.searchParams.get("utm_source")) {
     utmParams += "&utm_source=" + url.searchParams.get("utm_source");
 } else {
-    utmParams += "&utm_source=FA19";
+    utmParams += "&utm_source=LP";
 }
 
 for (var x = 0; x < links.length; x++) {

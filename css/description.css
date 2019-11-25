@@ -15,6 +15,12 @@
     position: relative;
     width: 284px;
     margin: auto;
+    transition: 0.2s all ease-in-out;
+    cursor: pointer;
+}
+
+.temoins:hover {
+    transform: scale(1.05);
 }
 
 .temoinsPopUp {
@@ -32,6 +38,7 @@
     overflow-y: scroll;
     height: 100%;
     padding-top: 10vh;
+    padding-bottom: 20px;
 }
 
 #temoin1 {
@@ -90,6 +97,20 @@
     transform: rotate(0deg) scale(1.15);
 }
 
+.rotateCircleTemoinPopUp {
+    transition: 0.2s all ease-in-out;
+    transform: rotate(45deg);
+}
+
+#footerPopUp {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    height: 15px;
+}
+
 @media screen and (max-width: 768px) {
     #temoin1 {
         right: 0px;
@@ -121,5 +142,12 @@
     .horCenterMobile {
         justify-content: center!important;
         margin: auto;
+        padding: 0!important;
+    }
+    #temoin2PopUpDescription {
+        padding-top: 100px;
+    }
+    #temoin3PopUpDescription {
+        padding-top: 100px;
     }
 }
