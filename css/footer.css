@@ -9,6 +9,11 @@
     text-align: center;
 }
 
+.noHoverStyle:hover {
+    color: #707070;
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     #lienContact {
         width: 140px;
