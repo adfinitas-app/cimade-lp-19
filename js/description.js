@@ -67,12 +67,13 @@ $(".redCircleDescription").click(function () {
 });
 
 $(".temoins").click(function () {
-    $("body").css("overflow-y", "hidden");
-    $("html").css("overflow-y", "hidden");
     $("#DescriptionPopUp").css("display", "block");
     $("#DescriptionPopUp").animate({
         opacity: 1
-    }, 1000);
+    }, 1000, function() {
+        $("body").css("overflow-y", "hidden");
+        $("html").css("overflow-y", "hidden");
+    });
 });
 
 
