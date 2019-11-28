@@ -14,6 +14,11 @@
     text-decoration: underline;
 }
 
+.noFocusStyle:focus {
+    color: #707070;
+    text-decoration: underline;
+}
+
 @media (min-width: 768px) {
     #lienContact {
         width: 140px;
