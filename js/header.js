@@ -13,3 +13,8 @@ $(window).resize(function () {
         $("#titleHeader").css("margin-left", "-389px");
     }
 });
+
+var video= $('#bgvid').get(0);
+video.addEventListener('ended',function(){
+    video.style.display = 'none';
+},false);
