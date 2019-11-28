@@ -111,6 +111,16 @@
     height: 15px;
 }
 
+#retourPopUpDescription {
+    position: fixed;
+    left: 15px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
     #temoin1 {
         right: 0px;
