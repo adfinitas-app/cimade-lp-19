@@ -9,6 +9,10 @@
     max-width: 400px
 }
 
+#colTextHeaderLeft {
+    padding-left: 80px;
+}
+
 video#bgvid {
     position: absolute;
     top: 50%;
@@ -27,6 +31,10 @@ video#bgvid {
     #textHeaderLeft {
         margin: 15px auto;
         max-width: 320px;
+    }
+
+    #colTextHeaderLeft {
+        padding-left: 15px;
     }
 
     #textHeaderMid {
