@@ -89,6 +89,9 @@ $("#retourPopUpDescription").click(function () {
             $("#DescriptionPopUp").css("display", "none");
         });
     } else {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
         $("#DescriptionPopUp").animate({
             opacity: 1
         }, 1000);
