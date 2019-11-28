@@ -3,6 +3,7 @@ var intervalOpacityPopUpDescription;
 var temoin1PopUpLeft = -100;
 var temoin2PopUpLeft = 0;
 var temoin3PopUpLeft = +100;
+var ScrollWindow = 0;
 
 $("#arrowRightPopUpDescription").click(function () {
     $("#arrowRightPopUpDescription").css("display", "block");
@@ -54,6 +55,9 @@ $(".redCircleDescription").click(function () {
     }
     $("#DescriptionPopUp").css("display", "block");
     if ($("#DescriptionPopUp").css("opacity") == 1) {
+        $('html, body').animate({
+            scrollTop: ScrollWindow
+        }, 1);
         $("#DescriptionPopUp").animate({
             opacity: 0
         }, 1000, function () {
@@ -66,7 +70,40 @@ $(".redCircleDescription").click(function () {
     }
 });
 
+$("#retourPopUpDescription").click(function () {
+    if ($("#DescriptionPopUp").css("display") == "none") {
+        $("body").css("overflow-y", "hidden");
+        $("html").css("overflow-y", "hidden");
+    } else {
+        $("body").css("overflow-y", "scroll");
+        $("html").css("overflow-y", "scroll");
+    }
+    $("#DescriptionPopUp").css("display", "block");
+    if ($("#DescriptionPopUp").css("opacity") == 1) {
+        $('html, body').animate({
+            scrollTop: ScrollWindow
+        }, 1);
+        $("#DescriptionPopUp").animate({
+            opacity: 0
+        }, 1000, function () {
+            $("#DescriptionPopUp").css("display", "none");
+        });
+    } else {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1);
+        $("#DescriptionPopUp").animate({
+            opacity: 1
+        }, 1000);
+    }
+});
+
 $(".temoins").click(function () {
+    ScrollWindow = $(window).scrollTop();
+
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1);
     $("#DescriptionPopUp").css("display", "block");
     $("#DescriptionPopUp").animate({
         opacity: 1
